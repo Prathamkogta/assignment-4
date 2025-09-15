@@ -43,7 +43,6 @@ The evaluation showed that while GMM-based resampling dramatically increased rec
 | **Baseline** | **0.8267** | 0.6327 | **0.7168** |
 | GMM Full Balance   | 0.0826    | **0.8980** | 0.1512   |
 | GMM + CBU          | 0.0789    | 0.8878 | 0.1449   |
-_Source:_
 
 -   **Baseline Model**: Achieved an F1-Score of **0.7168**, with a high precision of 0.8267 but a moderate recall of 0.6327. This means when it flags a transaction, it is correct ~83% of the time, but it only catches ~63% of all actual frauds.
 -   **GMM Models**: Both GMM-based models successfully boosted recall to **~90%**, significantly improving the detection of fraudulent transactions. However, this was accompanied by a catastrophic precision drop to **~8%**, resulting in a very high number of false positives and a poor F1-Score (~0.15).
